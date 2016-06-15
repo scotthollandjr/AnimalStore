@@ -1,0 +1,39 @@
+{ "animals": [{
+    "name": "Tomster",
+    "cost": 50,
+    "picture": "http://images.clipartpanda.com/hamster-clip-art-hamster2.png",
+    "description": "Insert description here",
+    "content": "What am i doing here?"
+  }, {
+    "name": "Tomster",
+    "cost": 50,
+    "picture": "http://images.clipartpanda.com/hamster-clip-art-hamster2.png",
+    "description": "Insert description here",
+    "content": "What am i doing here?"
+  }, {
+    "name": "Tomster",
+    "cost": 50,
+    "picture": "http://images.clipartpanda.com/hamster-clip-art-hamster2.png",
+    "description": "Insert description here",
+    "content": "What am i doing here?"
+  }],
+
+  "users": [{
+    "name": "John Doe",
+    "picture": "http://images.clipartpanda.com/guy-clipart-rcnKKXnKi.png"
+  }, {
+    "name": "John Doe",
+    "picture": "http://images.clipartpanda.com/guy-clipart-rcnKKXnKi.png"
+  }, {
+    "name": "John Doe",
+    "picture": "http://images.clipartpanda.com/guy-clipart-rcnKKXnKi.png"
+  }],
+  
+  "comments": [{
+    "comment": "Insert Comment Here"
+  }, {
+    "comment": "Insert Comment Here"
+  }, {
+    "comment": "Insert Comment Here"
+  }]
+}
