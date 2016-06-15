@@ -1,0 +1,7 @@
+nav, .btn {
+  background-color: #9575cd;
+}
+
+.btn:hover{
+  background-color: #7e57c2;
+}

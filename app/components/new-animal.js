@@ -11,6 +11,10 @@ export default Ember.Component.extend({
         user: this.get('user'),
       };
       this.sendAction('addAnimal', params);
+      this.set('name', "");
+      this.set('cost', "");
+      this.set('description', "");
+      this.set('picture', "");
     }
   }
 });

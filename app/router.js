@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('user', {path: '/user/:user_id'});
   this.route('comment');
   this.route('animal');
+  this.route('password', {path: '/password/:user_id'});
 });
 
 export default Router;
