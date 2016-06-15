@@ -1,0 +1,6 @@
+user (model)
+user has items (model)
+user/item has comments (model)
+
+index page show items by all, search, or by user
+new-item, new-user, new-comment
