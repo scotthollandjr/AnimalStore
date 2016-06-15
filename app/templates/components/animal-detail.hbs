@@ -1,7 +1,9 @@
+<div class="animalBox row">
 {{#each model.animal as |animal|}}
-  <div class="animalBox">
-    <img src={{animal.picture}}>
+  <div class="col s3">
+    <img src={{animal.picture}} height="150px">
     <p>{{animal.name}} - ${{animal.cost}}</p>
     <p>{{animal.description}}</p>
   </div>
 {{/each}}
+</div>

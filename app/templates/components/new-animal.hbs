@@ -1,19 +1,28 @@
-<form>
-  <div class="form-group">
-    {{input value=name id="name" placeholder="Name:"}}
-  </div>
+<div class="row newAnimal">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s9">
+          {{input value=name id="name"}}
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field col s3">
+          {{input value=cost id="cost"}}
+          <label for="cost">Cost</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          {{input value=picture id="picture"}}
+          <label for="picture">Picture Url</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          {{textarea class="materialize-textarea" value=description id="description"}}
+          <label for="last_name">Description</label>
+        </div>
+      </div>
 
-  <div class="form-group">
-    {{input value=cost id="cost" placeholder="Cost"}}
+      <button class="btn" {{action 'addAnimal'}}>Add!</button>
+    </form>
   </div>
-
-  <div class="form-group">
-    {{input value=description id="description" placeholder="Description"}}
-  </div>
-
-  <div class="form-group">
-    {{input value=picture id="picture" placeholder="Picture URL:"}}
-  </div>
-
-  <button {{action 'addAnimal'}}>Add!</button>
-</form>

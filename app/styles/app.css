@@ -1,7 +1,20 @@
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
 nav, .btn {
   background-color: #9575cd;
 }
 
 .btn:hover{
   background-color: #7e57c2;
+}
+
+.animalBox{
+  height: 175px;
+  margin: 10px 0;
+}
+
+.newAnimal{
+  margin-top: 100px;
 }
