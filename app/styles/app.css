@@ -18,3 +18,57 @@ nav, .btn {
 .newAnimal{
   margin-top: 100px;
 }
+
+.shoppingCart{
+  font-size: 19px;
+}
+
+.userAnimals{
+  margin-right: 5px;
+}
+
+.homeRow {
+  padding-top: 50px;
+}
+
+.ourContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.userList {
+  margin-left: 15px;
+}
+
+.iconSmall {
+  font-size: 20px;
+}
+
+.shadowName {
+  text-shadow: 2px 2px 1px #000;
+}
+
+.card {
+  height: 300px;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 50px;
+  border: 2px solid #7e57c2;
+}
+
+.lineUp {
+  font-size: 25px;
+  margin-top: 3px;
+}
+
+.profileLink {
+  text-decoration: none;
+  color: #ffab40;
+}
+
+.activator {
+  height: 200px;
+  width: 200px;
+}
