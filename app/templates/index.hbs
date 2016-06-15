@@ -1,1 +1,23 @@
-{{outlet}}
+<h2>Users</h2>
+<ul>
+  {{#each model.users as |user|}}
+    <li>{{user.name}}</li>
+  {{/each}}
+</ul>
+
+<h2>Animals</h2>
+<ul>
+  {{#each model.animals as |animal|}}
+    <li>{{animal.name}}</li>
+  {{/each}}
+</ul>
+
+<h2>Comments</h2>
+<ul>
+  {{#each model.comments as |comment|}}
+    <li>{{comment.content}}</li>
+  {{/each}}
+</ul>
+
+
+{{new-user addUser="addUser"}}

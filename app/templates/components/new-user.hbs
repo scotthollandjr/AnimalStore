@@ -1,0 +1,15 @@
+<form>
+  <div class="form-group">
+    {{input value=name id="name" placeholder="Username:"}}
+  </div>
+
+  <div class="form-group">
+    {{input value=picture id="picture" placeholder="Picture URL:"}}
+  </div>
+
+  <div class="form-group">
+    {{input value=password id="password" type="password" placeholder="Password:"}}
+  </div>
+
+  <button {{action 'addUser'}}>Sign-up!</button>
+</form>

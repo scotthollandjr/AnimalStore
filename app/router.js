@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('user', {path: '/user/:user_id'});
+  this.route('comment');
+  this.route('animal');
 });
 
 export default Router;

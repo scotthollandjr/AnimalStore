@@ -20,20 +20,23 @@
 
   "users": [{
     "name": "John Doe",
-    "picture": "http://images.clipartpanda.com/guy-clipart-rcnKKXnKi.png"
+    "picture": "http://images.clipartpanda.com/guy-clipart-rcnKKXnKi.png",
+    "password": "scott1"
   }, {
-    "name": "John Doe",
-    "picture": "http://images.clipartpanda.com/guy-clipart-rcnKKXnKi.png"
+    "name": "Jane Doe",
+    "picture": "http://images.clipartpanda.com/guy-clipart-rcnKKXnKi.png",
+    "password": "scott1"
   }, {
-    "name": "John Doe",
-    "picture": "http://images.clipartpanda.com/guy-clipart-rcnKKXnKi.png"
+    "name": "Jim Doe",
+    "picture": "http://images.clipartpanda.com/guy-clipart-rcnKKXnKi.png",
+    "password": "scott1"
   }],
-  
+
   "comments": [{
-    "comment": "Insert Comment Here"
+    "content": "Insert Comment Here"
   }, {
-    "comment": "Insert Comment Here"
+    "content": "Insert Comment Here"
   }, {
-    "comment": "Insert Comment Here"
+    "content": "Insert Comment Here"
   }]
 }
