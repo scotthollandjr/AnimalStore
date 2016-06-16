@@ -72,3 +72,9 @@ nav, .btn {
   height: 200px;
   width: 200px;
 }
+
+.revealButton {
+  position: fixed;
+  bottom: 20px;
+  margin-left: 10px;
+}

@@ -13,27 +13,9 @@
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">{{animal.name}}<i class="material-icons right">close</i></span>
         <p>{{animal.description}}</p>
+        <button {{action 'addToCart' animal}} class="btn revealButton">Add to Cart</button>
       </div>
     </div>
   </div>
   {{/each}}
 </div>
-
-<!-- <div class="row homeRow">
-  {{#each model.animals as |animal|}}
-  <div class="col s4">
-    <div class="card">
-      <div class="card-image">
-        <img src="{{animal.picture}}">
-        <span class="card-title">{{animal.name}}</span>
-      </div>
-      <div class="card-content">
-        <p>{{animal.description}}</p>
-      </div>
-      <div class="card-action">
-        <a href="#"><h5><i class="material-icons prefix shoppingCart">shopping_cart</i> ${{animal.cost}}</h5></a>
-      </div>
-    </div>
-  </div>
-  {{/each}}
-</div> -->

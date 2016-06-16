@@ -9,6 +9,7 @@ export default Ember.Component.extend({
         picture: this.get('picture'),
         description: this.get('description'),
         user: this.get('user'),
+        cart: false,
       };
       this.sendAction('addAnimal', params);
       this.set('name', "");

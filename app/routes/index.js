@@ -14,6 +14,14 @@ export default Ember.Route.extend({
       var newUser = this.store.createRecord('user', params);
       newUser.save();
       this.transitionTo('index');
+    },
+
+    addToCart(animal){
+      console.log(animal.get('cart'));
+      animal.set("cart", true);
+      animal.save();
+      console.log(animal.get('cart'));
+      this.transitionTo('index');
     }
   }
 });

@@ -9,4 +9,5 @@ export default Model.extend({
     description: attr(),
     user: belongsTo('user', {async: true}),
     comment: hasMany('comment', {async: true}),
+    cart: attr(),
 });
