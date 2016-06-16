@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('comment');
   this.route('animal');
   this.route('password', {path: '/password/:user_id'});
+  this.route('animal', {path: '/animal/:animal_id'});
 });
 
 export default Router;

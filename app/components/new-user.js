@@ -8,7 +8,14 @@ export default Ember.Component.extend({
         picture: this.get('picture'),
         password: this.get('password')
       };
-      this.sendAction('addUser', params);
+      if(params.name != undefined && params.picture != undefined && params.password != undefined){
+        this.sendAction('addUser', params);
+      } else{
+        alert("You gotta fill all the inputs dude");
+      };
+      this.set("name", "");
+      this.set("picture", "");
+      this.set("password", "");
     }
   }
 });

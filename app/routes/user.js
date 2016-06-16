@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    addAnimal(params){
+    addAnimal(params) {
       var newAnimal = this.store.createRecord('animal', params);
       var user = params.user;
       user.get('animal').addObject(newAnimal);

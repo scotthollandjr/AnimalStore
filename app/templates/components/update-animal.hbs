@@ -1,0 +1,36 @@
+<div class="updateDiv">
+  <img src="{{model.picture}}" style="width: 250px">
+  <h4>Name: {{model.name}}</h4>
+  <p>Cost: ${{model.cost}}</p>
+  <p>Description: {{model.description}}</p>
+</div>
+
+<div class="row newAnimal">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s9">
+        {{input value=name id="name"}}
+        <label for="name">Name</label>
+      </div>
+      <div class="input-field col s3">
+        {{input value=cost id="cost"}}
+        <label for="cost">Cost</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        {{input value=picture id="picture"}}
+        <label for="picture">Picture Url</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        {{input value=description id="description" maxlength="200"}}
+        <label for="last_name">Description</label>
+      </div>
+    </div>
+
+    <button class="btn" {{action 'updateAnimal' model}}>Update</button>
+    <button class="btn red accent-4" {{action 'deleteAnimal' model}}>Delete</button>
+  </form>
+</div>

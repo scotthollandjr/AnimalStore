@@ -1,23 +1,8 @@
-<div class="row homeRow">
+<ul class="collection with-header">
+  <li class="collection-header"><h4>Total cost: ${{calculateTotal}}</h4></li>
   {{#each model.animals as |animal|}}
   {{#if animal.cart}}
-  <div class="col s4">
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="{{animal.picture}}">
-        <span class="card-title shadowName">{{animal.name}}</span>
-      </div>
-      <div class="card-content">
-        <span class="card-title activator"><i class="material-icons right">more_vert</i></span>
-        <a href="#"><h5><i class="material-icons prefix shoppingCart">shopping_cart</i> ${{animal.cost}}</h5></a>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">{{animal.name}}<i class="material-icons right">close</i></span>
-        <p>{{animal.description}}</p>
-        <button {{action 'removeFromCart' animal}} class="btn revealButton">Remove</button>
-      </div>
-    </div>
-  </div>
+  <li class="collection-item"><div>{{animal.name}} - ${{animal.cost}}<i class="material-icons secondary-content" {{action 'removeFromCart' animal}}>not_interested</i></div></li>
   {{/if}}
   {{/each}}
-</div>
+</ul>

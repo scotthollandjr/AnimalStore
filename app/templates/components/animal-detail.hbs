@@ -5,6 +5,7 @@
     <h5> <i class="material-icons prefix shoppingCart">shopping_cart</i> {{animal.name}}</h5>
     <p><strong>Cost:</strong> ${{animal.cost}}</p>
     <p>{{animal.description}}</p>
+    {{#link-to 'animal' animal.id animal=model}}<button class="btn" name="button">Edit Animal</button>{{/link-to}}
   </div>
 {{/each}}
 </div>
