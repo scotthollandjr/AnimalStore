@@ -4,8 +4,7 @@ export default Ember.Route.extend({
   model(){
     return Ember.RSVP.hash({
       users: this.store.findAll('user'),
-      animals: this.store.findAll('animal'),
-      comments: this.store.findAll('comment')
+      animals: this.store.findAll('animal')
     });
   },
 
@@ -17,10 +16,14 @@ export default Ember.Route.extend({
     },
 
     addToCart(animal){
-      console.log(animal.get('cart'));
       animal.set("cart", true);
       animal.save();
-      console.log(animal.get('cart'));
+      this.transitionTo('index');
+    },
+
+    removeFromCart(animal){
+      animal.set("cart", false);
+      animal.save();
       this.transitionTo('index');
     }
   }

@@ -78,3 +78,7 @@ nav, .btn {
   bottom: 20px;
   margin-left: 10px;
 }
+
+.true {
+  display: none;
+}

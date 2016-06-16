@@ -1,7 +1,8 @@
 <div class="row homeRow">
   {{#each model.animals as |animal|}}
+  {{#if animal.cart}}
   <div class="col s4">
-    <div class="card {{animal.cart}}">
+    <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="{{animal.picture}}">
         <span class="card-title shadowName">{{animal.name}}</span>
@@ -13,9 +14,10 @@
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">{{animal.name}}<i class="material-icons right">close</i></span>
         <p>{{animal.description}}</p>
-        <button {{action 'addToCart' animal}} class="btn revealButton">Add to Cart</button>
+        <button {{action 'removeFromCart' animal}} class="btn revealButton">Remove</button>
       </div>
     </div>
   </div>
+  {{/if}}
   {{/each}}
 </div>
