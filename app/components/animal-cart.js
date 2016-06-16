@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   calculateTotal: Ember.computed('model.animals.[]', function() {
-    var total = 0.0;
+    var total = 0.00;
     var animals = this.get('model.animals');
     animals.forEach(function(animal) {
       if (animal.get('cart')) {

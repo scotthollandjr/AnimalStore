@@ -1,5 +1,4 @@
-
-<h4>Available Animals:</h4>
+<br>
 <div class="row">
   <div class="col s8 animalsDiv">
     {{animal-tile model=model addToCart="addToCart"}}
@@ -19,9 +18,9 @@
       {{#each model.users as |user|}}
       <li class="collection-item avatar">
         {{#link-to 'password' user.id user=model}}
-        <img src="{{user.picture}}" alt="" class="circle">
-        <span class="title userTitle">{{user.name}}</span>
-        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+        <img class="userPic" src="{{user.picture}}" alt="" class="circle">
+        <span class="title userTitle"><h5>{{user.name}}</h5></span>
+        <a href="#!" class="secondary-content"></a>
         {{/link-to}}
       </li>
       {{/each}}

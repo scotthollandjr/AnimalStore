@@ -86,10 +86,6 @@ select {
     z-index: 998;
 }
 
-.userTitle {
-  font-size: 50px;
-}
-
 .collection {
   overflow-y: scroll;
   height: 260px;
