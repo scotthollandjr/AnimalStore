@@ -1,7 +1,6 @@
 # Animal-store
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Animal Store project in ember for Epicodus JavaScript course. Users can make accounts, (fake) sign-in, add animals to be sold, and add animals to their cart.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/theAppanaut/AnimalStore.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
